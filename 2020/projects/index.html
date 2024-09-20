@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rajkamal Rao — Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="../photos/logo.png">
+  <link rel="stylesheet" href="../unistyles.css">
+  <meta name="description" content="Portfolio of Rajkamal Rao. A frontend developer focused on creating interactive and responsive user experiences.">
+  <meta name="theme-color" content="#f94444">
+  <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    document.location = "../mobile.html";
+    }
+    //-->
+  </script>
+  <script language=javascript>
+    <!--
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    location.replace("../mobile.html");
+    }
+    -->
+  </script>
+
+  <style>
+  .abt_t{
+    padding-top: 50vh;
+  }
+
+  .abt_t h1{
+    width: 200%;
+  }
+
+  .abt_t > h1 > .row > span > span{
+    display: inline-block;
+  }
+
+  .le{
+    margin-left: -60%;
+  }
+
+  .abt_t > div{
+    position: absolute;
+    width: 40%;
+    margin-left: 15%;
+  }
+
+  .wrk{
+    padding-bottom: 12%;
+  }
+
+  .arc, .ins{
+    margin: 34vh 5vw 0vh 5vw;
+  }
+
+  .arc_t{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .arc_c{
+    width: 48%;
+    transform: translate(26.9%, 20%);
+  }
+
+  .arc_c ul li{
+    border-bottom: 1px solid rgba(100, 100, 103, .1);
+    justify-content: space-between;
+    box-shadow: inset 0 0 #fff;
+    transition: .4s;
+  }
+
+  .arc_c ul li:hover{
+    box-shadow: inset 0 100px #fff;
+    padding: 0 20px;
+  }
+
+  .arc_c ul li:hover p{
+    color: #231f20 !important;
+  }
+
+  .arc_c ul li, .arc_c ul li > p{
+    display: flex;
+    align-items: center;
+  }
+
+  .arc_c ul li > p{
+    width: 80%;
+    padding: 20px 0;
+  }
+
+  .arc_c ul li > p span:first-child{
+    width: 40%;
+    opacity: .8;
+  }
+
+  .arc_c ul li > a img{
+    filter: invert(1);
+    transition: .3s;
+  }
+
+  .arc_c ul li:hover a img{
+    filter: invert(0);
+  }
+
+  .l_p{
+    width: 70%;
+    white-space: nowrap;
+    font-family: circular_bold;
+  }
+
+  .l_p:last-child{
+    opacity: .6;
+    transform: translate(60px, 0);
+    font-family: circular;
+  }
+
+  .ins{
+    margin-top: 55vh;
+    margin-bottom: -8vh;
+  }
+
+  .ins .arc_t h1{
+    width: 100%;
+  }
+
+  .ins .arc_t{
+    text-align: right;
+  }
+
+  .ins_r{
+    display: flex;
+  }
+
+  .ins_r ul{
+    width: 25%;
+  }
+
+  .ins_r ul:nth-child(2){
+    margin: 0 8vw 0 2vw;
+  }
+
+  .ins_r li{
+    margin-bottom: 3vh;
+  }
+
+  .ins_r ul > li > div{
+    position: relative;
+  }
+
+  .ins_r ul > li div > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(40, 40, 43, .5);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+  }
+
+  .ins_r li:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ins_r li > div > div img{
+    width: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .ins_r ul > li > div > img{
+    width: 100%;
+  }
+
+  .beh{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes rotate {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width : 1000px) and (max-width : 1356px){
+    .arc{
+      margin-top: 20vh;
+    }
+    .ins{
+      margin-top: 45vh;
+    }
+    .fot{
+      padding-bottom: 15px;
+    }
+  }
+
+  @media only screen and (min-width : 1430px){
+    .arc{
+      margin-top: 24vh;
+    }
+    .ins{
+      margin-top: 38vh;
+    }
+  }
+  </style>
+</head>
+<body onload="followMouse();">
+  <div class="logo">
+    <p>Rajkamal Rao<br>Frontend Developer</p>
+  </div>
+  <nav class="col-3">
+   <div>
+     <a href="../about/">about</a><br>
+     <a href="./">home</a>
+   </div>
+   <div>
+     <a target="_blank" href="https://www.linkedin.com/in/rajkamal-rao-94490b259/">LinkedIn</a><br>
+     <a target="_blank" href="https://github.com/Rajkamal202">GitHub</a><br>
+     <a href="mailto:raop4903@gmail.com?subject=Let's%20Work%20Together" title="I usually respond in a day.">email</a>
+   </div>
+  </nav>
+  <!--MAIN-->
+  <!--SCROLL-CTN-->
+  <div id="luxy">
+      <!--CONTENT-->
+      <div class="abt_t">
+        <div style="transform: translate(86%, -150%)">
+          <p class="delay">
+           <span class="row">
+             <span data-emergence="hidden">
+                A collection of my
+             </span>
+           </span>
+           <span class="row">
+             <span data-emergence="hidden">
+                projects from
+             </span>
+           </span>
+           <span class="row" style="font-size: 20px; padding-top: 8px; font-family: circular_bold;">
+             <span data-emergence="hidden">
+                2022 - 2023
+             </span>
+           </span>
+          </p>
+        </div>
+        <h1 class="luxy-el" data-horizontal="1" data-speed-x="-15">
+         <span class="row">
+           <span data-emergence="hidden">highlighted<span class="outline">highlighted</span>highlighted</span>
+         </span>
+        </h1>
+        <h1 class="le luxy-el" data-horizontal="1" data-speed-x="15">
+         <span class="row">
+           <span data-emergence="hidden">projects<span class="outline">projects</span>projects</span>
+         </span>
+        </h1>
+      </div>
+
+      <div class="wrk">
+        <div class="wrk_s" style="position: relative; height: auto; padding: 0 0 52% 0">
+          <div class="wrk_e" style="width: 45vw; position: absolute; right: 0;">
+            <a target="_blank" href="https://saas-frontend-beta.vercel.app/">
+              <div class="w-img imgrev" data-emergence="hidden" onmousemove="vis();" onmouseout="hid();">
+                <img class="bg" src="../photos/project1.png">
+                <div style="left: 33%" class="luxy-el" data-speed-y="4" data-offset="-37">
+                  <img style="width: 16vw;" src="../photos/webdesign.png">
+                </div>
+              </div>
+            </a>
+            <div class="w-txt">
+              <p>01.</p>
+              <div>
+                <p>SAAS Landing Page</p>
+                <span>Website</span>
+              </div>
+            </div>
+           </div>
+         </div>
+
+        <div class="wrk_s" style="position: relative; height: auto; padding: 16% 0 17% 0">
+          <div class="wrk_e" style="width: 48vw;">
+            <a target="_blank" href="https://apple-clone-rajkamal202s-projects.vercel.app/">
+              <div class="w-img imgrev" data-emergence="hidden" onmousemove="vis();" onmouseout="hid();">
+                <img class="bg" src="../photos/project2.png">
+                <div style="left: 7%" class="luxy-el" data-speed-y="-5.4" data-offset="92">
+                  <img style="width: 90%" src="../photos/mobileapp.png">
+                </div>
+              </div>
+            </a>
+            <div class="w-txt">
+              <p>02.</p>
+              <div>
+                <p>Apple website clone</p>
+                <span>Mobile App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrk_s flex jus">
+          <div class="wrk_e" style="width: 30vw;">
+            <a target="_blank" href="https://ecommerce-website-gray-six.vercel.app/">
+              <div class="w-img imgrev" data-emergence="hidden" onmousemove="vis();" onmouseout="hid();">
+                <img class="bg" src="../photos/project3.png">
+                <div class="luxy-el" data-speed-y="2" data-offset="-55">
+                  <img style="width: 80%" src="../photos/store.png">
+                </div>
+              </div>
+            </a>
+            <div class="w-txt">
+              <p>03.</p>
+              <div>
+                <p>E-commerce Store</p>
+                <span>Website/Concept</span>
+              </div>
+            </div>
+          </div>
+          <div class="wrk_e" style="width: 35vw; transform: translate(0, 25%)">
+            <a target="_blank" href="https://react-saas-landingpage.vercel.app/">
+              <div class="w-img imgrev" data-emergence="hidden" onmousemove="vis();" onmouseout="hid();">
+                <img class="bg" src="../photos/project4.png">
+                <div class="luxy-el" data-speed-y="-4" data-offset="175">
+                  <img style="width: 90%" src="../photos/socialapp.png">
+                </div>
+              </div>
+            </a>
+            <div class="w-txt">
+              <p>04.</p>
+              <div>
+                <p>VR Landing page</p>
+                <span>Mobile App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--OTHERS-->
+      <div class="arc">
+        <div class="arc_t">
+          <h1 onmousemove="vis2();" onmouseout="hid2();">
+            <span class="row">
+              <span class="outline -o" data-emergence="hidden">Projects</span>
+            </span>
+            <span class="row">
+              <span data-emergence="hidden">Projects</span>
+            </span>
+            <span class="row">
+              <span class="outline -o" data-emergence="hidden">Projects</span>
+            </span>
+          </h1>
+          <p style="transform: translate(42%, 42%)">
+            <span class="row">
+              <span data-emergence="hidden" style="transition-delay: .8s">Includes academic projects</span>
+            </span>
+            <span class="row">
+              <span data-emergence="hidden" style="transition-delay: .9s">and personal experiments.</span>
+            </span>
+          </p>
+        </div>
+        <div class="arc_c">
+          <ul>
+            <li>
+             <p class="delay">
+              <a target="_blank" href="https://github.com/Rajkamal202">
+               <span class="row">
+                 <span data-emergence="hidden">Other Project</span>
+               </span>
+              
+              </a>
+             </p>
+             <a target="_blank" href="port2023/">
+               <span class="row">
+                 <span data-emergence="hidden"><img src="../photos/tab.svg"></span>
+               </span>
+             </a>
+           </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <!--END-->
+  </div>
+</body>
+</html>
+  <span id="float" class="float beh"><img src="../photos/beh.png"></span>
+  <span id="float2" class="float custom_img"><img src="../photos/arc.png"></span>
+  <script src="../js/luxy.js"></script>
+  <script src="../js/emergence.js"></script>
+  <script charset="utf-8">
+    luxy.init();
+
+
+    function vis(){
+      document.getElementById('float').style.opacity = "1";
+    }
+
+    function hid(){
+      document.getElementById('float').style.opacity = "0";
+    }
+
+    function vis2(){
+      document.getElementById('float2').style.opacity = "1";
+    }
+
+    function hid2(){
+      document.getElementById('float2').style.opacity = "0";
+    }
+
+
+
+
+    var $ = document.querySelector.bind(document);
+    var $on = document.addEventListener.bind(document);
+    var followMouse = function() {
+      key = requestAnimationFrame(followMouse);
+
+      if (!x || !y) {
+        x = xmouse;
+        y = ymouse;
+      }
+      else {
+        dx = (xmouse - x) * 0.125;
+        dy = (ymouse - y) * 0.125;
+        if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+          x = xmouse;
+          y = ymouse;
+        }
+        else {
+          x += dx;
+          y += dy;
+        }
+      }
+      ball.style.left = x + 'px';
+      ball.style.top = $("#luxy").scrollTop + y + 'px';
+    };
+
+    var xmouse, ymouse;
+    var ball = $('#float');
+    var x = void 0,
+      y = void 0,
+      dx = void 0,
+      dy = void 0,
+      tx = 0,
+      ty = 0,
+      key = -1;
+
+    $on('mousemove', function(e) {
+      xmouse = e.clientX || e.pageX;
+      ymouse = e.clientY || e.pageY;
+    });
+
+    document.addEventListener("DOMContentLoaded", followMouse);
+
+
+    var $2 = document.querySelector.bind(document);
+    var $on2 = document.addEventListener.bind(document);
+    var followMouse2 = function() {
+      key = requestAnimationFrame(followMouse2);
+
+      if (!x || !y) {
+        x = xmouse;
+        y = ymouse;
+      }
+      else {
+        dx = (xmouse - x) * 0.125;
+        dy = (ymouse - y) * 0.125;
+        if (Math.abs(dx) + Math.abs(dy) < 0.1) {
+          x = xmouse;
+          y = ymouse;
+        }
+        else {
+          x += dx;
+          y += dy;
+        }
+      }
+      ball2.style.left = x + 'px';
+      ball2.style.top = $("#luxy").scrollTop + y + 'px';
+    };
+
+
+    var xmouse2, ymouse2;
+    var ball2 = $('#float2');
+    var x = void 0,
+      y = void 0,
+      dx = void 0,
+      dy = void 0,
+      tx = 0,
+      ty = 0,
+      key = -1;
+
+    $on('mousemove', function(e) {
+      xmouse2 = e.clientX || e.pageX;
+      ymouse2 = e.clientY || e.pageY;
+    });
+
+    document.addEventListener("DOMContentLoaded", followMouse2);
+
+
+  </script>
+  <script>
+  emergence.init({
+    container: window,
+    reset: false,
+    handheld: true,
+    throttle: 250,
+    elemCushion: 0.5,
+    offsetTop: 0,
+    offsetRight: 0,
+    offsetBottom: 50,
+    offsetLeft: 0,
+    callback: function(element, state) {
+      if (state === 'visible') {
+        console.log('Element is visible.');
+      } else if (state === 'reset') {
+        console.log('Element is hidden with reset.');
+      } else if (state === 'noreset') {
+        console.log('Element is hidden with NO reset.');
+      }
+    }
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('[data-paroller-factor]').paroller();
+      //TO BOTTOM
+      $(".sbot").paroller({
+       factor: .18,
+       type: 'foreground',
+       direction: 'vertical',
+       transition: 'transform .3s ease-out'
+      });
+    });
+  </script>
+</body>
+</html>
